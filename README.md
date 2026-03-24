@@ -4,6 +4,8 @@
 
 Behavioral health monitor for Claude Code agents. Detects pathological patterns (loops, errors, stuck edits) in real-time via PostToolUse hooks and injects advisory feedback into the conversation.
 
+See [blog post at bjro.dev](https://bjro.dev/claude-autohealth)
+
 ## How it works
 
 The monitor runs as a Claude Code hook on every tool call. It extracts signals from the payload and computes a composite health score:
@@ -139,4 +141,4 @@ autohealth-dashboard.py   — Textual TUI dashboard
 
 ## License
 
-MIT
+Apache-2.0
